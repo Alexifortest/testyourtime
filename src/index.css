@@ -17,37 +17,48 @@ All colors MUST be HSL.
     --popover: 0 0% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 85% 45%;
+    --primary: 0 85% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 45 100% 50%;
+    --accent: 45 100% 55%;
     --accent-foreground: 0 0% 10%;
 
-    --destructive: 0 85% 45%;
+    --destructive: 0 85% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
+    --border: 0 0% 25%;
     --input: 0 0% 20%;
-    --ring: 0 85% 45%;
+    --ring: 0 85% 50%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
     
-    --racing-red: 0 85% 45%;
-    --racing-gold: 45 100% 50%;
+    --racing-red: 0 85% 50%;
+    --racing-red-dark: 0 85% 40%;
+    --racing-gold: 45 100% 55%;
     --carbon: 0 0% 12%;
     --track: 0 0% 7%;
     
-    --gradient-carbon: linear-gradient(135deg, hsl(0 0% 10%), hsl(0 0% 15%));
-    --gradient-racing: linear-gradient(135deg, hsl(0 85% 45%), hsl(0 75% 35%));
+    /* Glassmorphism */
+    --glass-bg: 0 0% 100% / 0.05;
+    --glass-border: 0 0% 100% / 0.1;
+    --glass-shadow: 0 8px 32px 0 hsl(0 0% 0% / 0.37);
     
-    --shadow-glow: 0 0 40px hsl(0 85% 45% / 0.3);
+    /* Gradients */
+    --gradient-carbon: linear-gradient(135deg, hsl(0 0% 10%), hsl(0 0% 15%));
+    --gradient-racing: linear-gradient(135deg, hsl(0 85% 50%), hsl(0 85% 40%));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.08), hsl(0 0% 100% / 0.02));
+    
+    /* Effects */
+    --shadow-glow: 0 0 40px hsl(0 85% 50% / 0.4);
+    --shadow-glow-intense: 0 0 60px hsl(0 85% 50% / 0.6), 0 0 100px hsl(0 85% 50% / 0.3);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 

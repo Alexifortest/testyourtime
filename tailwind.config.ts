@@ -49,10 +49,20 @@ export default {
         },
         racing: {
           red: "hsl(var(--racing-red))",
+          "red-dark": "hsl(var(--racing-red-dark))",
           gold: "hsl(var(--racing-gold))",
           carbon: "hsl(var(--carbon))",
           track: "hsl(var(--track))",
         },
+      },
+      fontFamily: {
+        'f1-display': ['Orbitron', 'sans-serif'],
+        'f1-body': ['Rajdhani', 'sans-serif'],
+        'f1-title': ['Bebas Neue', 'sans-serif'],
+      },
+      backdropBlur: {
+        'xs': '2px',
+      },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -76,10 +86,52 @@ export default {
             height: "0",
           },
         },
+        "glow-pulse": {
+          "0%, 100%": {
+            boxShadow: "0 0 20px hsl(var(--racing-red) / 0.3)",
+          },
+          "50%": {
+            boxShadow: "0 0 60px hsl(var(--racing-red) / 0.8), 0 0 100px hsl(var(--racing-red) / 0.4)",
+          },
+        },
+        "light-on": {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.8)",
+          },
+          "50%": {
+            opacity: "1",
+            transform: "scale(1.1)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)",
+          },
+        },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
+        },
+        "shimmer": {
+          "0%": {
+            backgroundPosition: "-1000px 0",
+          },
+          "100%": {
+            backgroundPosition: "1000px 0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "glow-pulse": "glow-pulse 2s ease-in-out infinite",
+        "light-on": "light-on 0.3s ease-out",
+        "float": "float 3s ease-in-out infinite",
+        "shimmer": "shimmer 3s linear infinite",
       },
     },
   },
